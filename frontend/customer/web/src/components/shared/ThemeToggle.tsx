@@ -3,6 +3,9 @@
 import { useSyncExternalStore } from "react";
 import { useTheme } from "next-themes";
 
+import { MdLightMode, MdDarkMode  } from "react-icons/md";
+
+
 const emptySubscribe = () => () => {};
 
 export default function ThemeToggle() {
@@ -20,9 +23,13 @@ export default function ThemeToggle() {
       type="button"
       onClick={() => setTheme(isDark ? "light" : "dark")}
       aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
-      className="rounded-lg border border-gray-300 p-2 transition-colors hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800"
+      className="grid size-10 place-items-center rounded-full border border-[var(--foreground)]/10 text-[var(--foreground)] transition-colors hover:bg-[var(--surface-color)] cursor-pointer"
     >
-      {isDark ? "☀️ Light Mode" : "🌙 Dark Mode"}
+      {isDark ? (
+        <MdLightMode />
+      ) : (
+        <MdDarkMode />
+      )}
     </button>
   );
 }

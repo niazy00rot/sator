@@ -18,10 +18,10 @@ export default function LanguageSwitcher() {
     <button
       type="button"
       onClick={switchLocale}
-      className="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800"
+      className="grid h-10 min-w-10 place-items-center rounded-full border border-[var(--foreground)]/10 px-2.5 text-[12px] font-black text-[var(--foreground)] transition-colors hover:bg-[var(--surface-color)] cursor-pointer"
       aria-label="Change language"
     >
-      {locale === "en" ? "العربية" : "English"}
+      {locale === "en" ? "Ar" : "En"}
     </button>
   );
 }

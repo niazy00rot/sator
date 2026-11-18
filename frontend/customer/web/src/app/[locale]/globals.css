@@ -3,15 +3,20 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --main-color: #E43C00;
+  --primary-color: #E43C00;
+  --primary-hover: #C93200;
   
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFFCF8;
+  --foreground: #24201C;
+
+  --surface-color: #F3EDE2;
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #171411;
+  --foreground: #F5F0E8;
+
+  --surface-color: #252019;
 }
 
 @theme inline {
