@@ -1,3 +1,43 @@
 {
-  "home": "Home"
+  "home": {
+    "title": "Your favorite food",
+    "titleAccent": "delivered to your door",
+    "description": "Discover the best restaurants near you, order your meal in minutes, and track every step until it arrives.",
+    "locationLabel": "Delivery address",
+    "locationPlaceholder": "Enter your address or area",
+    "findFood": "Find food",
+    "fastDelivery": "Fast delivery",
+    "topRestaurants": "Hand-picked restaurants",
+    "floatingDelivery": "On the way",
+    "floatingTime": "Arrives in 18 min",
+    "floatingRating": "Customer rating",
+    "categoriesEyebrow": "What are you craving?",
+    "categoriesTitle": "Browse categories",
+    "viewAll": "View all",
+    "categories": {
+      "pizza": "Pizza",
+      "burgers": "Burgers",
+      "chicken": "Chicken",
+      "desserts": "Desserts"
+    },
+    "restaurantsEyebrow": "Picked for you",
+    "restaurantsTitle": "Popular restaurants near you",
+    "restaurantTags": {
+      "featured": "Featured",
+      "fast": "Fast delivery",
+      "top": "Top rated"
+    },
+    "restaurantsNames": {
+      "bistro": "Sator Bistro",
+      "grill": "Grill House",
+      "sushi": "Sushi Station"
+    },
+    "restaurantTypes": {
+      "bistro": "Italian • Pasta",
+      "grill": "Burgers • Grill",
+      "sushi": "Sushi • Asian"
+    },
+    "delivery": "Free delivery",
+    "minutes": "min"
+  }
 }

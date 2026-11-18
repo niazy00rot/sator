@@ -21,7 +21,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-black/5 backdrop-blur-xl dark:border-white/8">
+    <header className="sticky top-0 z-50 border-b border-black/5 bg-[var(--background)]/90 backdrop-blur-xl dark:border-white/8">
       <div className="mx-auto flex h-[72px] max-w-[1180px] items-center gap-6 px-5 sm:px-8">
         <Link
           href="/"
