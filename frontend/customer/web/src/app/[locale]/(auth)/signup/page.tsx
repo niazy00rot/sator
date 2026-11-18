@@ -87,7 +87,7 @@ export default function SignupPage() {
               </span>
             </div>
 
-            <button type="submit" className="mt-1 h-14 w-full cursor-pointer rounded-2xl bg-[var(--primary-color)] text-sm font-black text-white shadow-[0_12px_30px_rgba(228,60,0,.22)] transition hover:-translate-y-0.5 hover:bg-[var(--primary-hover)]">
+            <button type="submit" className="mt-1 h-14 w-full cursor-pointer rounded-2xl bg-[var(--primary-color)] text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-[var(--primary-hover)]">
               {t("submit")}
             </button>
           </form>
