@@ -2,19 +2,28 @@ package main
 
 import (
 	"log"
-
+	"github.com/gin-gonic/gin"
 	"sator.local/backend/internal/config/database"
-	"sator.local/backend/internal/models"
+	"sator.local/backend/internal/repository"
+	authController "sator.local/backend/internal/controller"
+	authService "sator.local/backend/internal/service"
+	authRoutes "sator.local/backend/internal/route"
 )
 
 func main() {
 	db, err := database.ConnectDatabase()
 	if err != nil {
-		log.Fatal("database connection failed: ", err)
+		panic("Failed to connect to the database: " + err.Error())
 	}
+	userRepo := repository.NewUserRepo(db)
+	service := authService.NewAuthService(userRepo)
+	controller := authController.NewAuthController(service)
 
-	if err := db.AutoMigrate(&models.User{}); err != nil {
-		log.Fatal("migration failed: ", err)
+	router := gin.Default()
+	api:= router.Group("/api")
+	authRoutes.RegisterAuthRouter(api, controller)
+	log.Println("Starting server on :8080")
+	if err := router.Run(":8080"); err != nil {
+		log.Fatal("Failed to start server: ", err)
 	}
-	log.Println("Migration completed successfully!")
 }
