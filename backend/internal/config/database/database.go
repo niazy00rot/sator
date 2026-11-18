@@ -11,7 +11,7 @@ import (
 )
 
 func ConnectDatabase() (*gorm.DB, error) {
-	for _, envFile := range []string{".env", "../.env"} {
+	for _, envFile := range []string{".env", ".env"} {
 		_, err := os.Stat(envFile)
 		if err != nil {
 			if os.IsNotExist(err) {
