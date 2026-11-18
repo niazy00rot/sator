@@ -1,7 +1,7 @@
 import { getRequestConfig } from 'next-intl/server';
 import { locale as getRootLocale } from "next/root-params";
 
-const namespaces = ['landing'] as const;
+const namespaces = ['nav', 'auth', 'landing'] as const;
 
 export default getRequestConfig(async () => {
   const requested = await getRootLocale();;

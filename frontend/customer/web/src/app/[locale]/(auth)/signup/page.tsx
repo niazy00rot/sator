@@ -1,14 +1,18 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { MdEmail, MdLock, MdPerson, MdPhone, MdVisibility, MdVisibilityOff } from "react-icons/md";
 
 import { Link } from "@/i18n/navigation";
 
 export default function SignupPage() {
-  const t = useTranslations("landing.auth.signup");
+  const t = useTranslations("auth.signup");
   const [showPassword, setShowPassword] = useState(false);
+
+  useEffect(() => {
+    document.title = "Sign up | Sator";
+  }, []);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();

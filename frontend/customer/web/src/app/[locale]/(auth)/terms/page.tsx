@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import { MdGavel } from "react-icons/md";
 
 export default function TermsPage() {
-  const t = useTranslations("landing.legal.terms");
+  const t = useTranslations("auth.terms");
 
   const sections = [
     "service",
@@ -21,7 +21,6 @@ export default function TermsPage() {
         <div>
           <p className="mb-2 text-sm font-black text-[var(--primary-color)]">{t("eyebrow")}</p>
           <h1 className="text-4xl font-black tracking-tight text-[var(--foreground)]">{t("title")}</h1>
-          <p className="mt-3 text-sm text-[var(--foreground)]/55">{t("updated")}</p>
         </div>
       </div>
 

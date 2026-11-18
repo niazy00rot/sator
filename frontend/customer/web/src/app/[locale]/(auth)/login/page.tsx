@@ -1,14 +1,18 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { MdEmail, MdLock, MdVisibility, MdVisibilityOff } from "react-icons/md";
 
 import { Link } from "@/i18n/navigation";
 
 export default function LoginPage() {
-  const t = useTranslations("landing.auth.login");
+  const t = useTranslations("auth.login");
   const [showPassword, setShowPassword] = useState(false);
+
+  useEffect(() => {
+    document.title = "Login | Sator";
+  }, []);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();

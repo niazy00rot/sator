@@ -12,7 +12,7 @@ import ThemeToggle from "@/components/shared/ThemeToggle";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
-  const t = useTranslations("landing.nav");
+  const t = useTranslations("nav");
 
   const navItems = [
     { href: "/", label: t("home") },

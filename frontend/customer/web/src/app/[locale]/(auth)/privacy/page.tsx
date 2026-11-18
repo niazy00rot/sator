@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import { MdPrivacyTip } from "react-icons/md";
 
 export default function PrivacyPage() {
-  const t = useTranslations("landing.legal.privacy");
+  const t = useTranslations("auth.privacy");
 
   const sections = [
     "collection",
@@ -21,7 +21,6 @@ export default function PrivacyPage() {
         <div>
           <p className="mb-2 text-sm font-black text-[var(--primary-color)]">{t("eyebrow")}</p>
           <h1 className="text-4xl font-black tracking-tight text-[var(--foreground)]">{t("title")}</h1>
-          <p className="mt-3 text-sm text-[var(--foreground)]/55">{t("updated")}</p>
         </div>
       </div>
 
