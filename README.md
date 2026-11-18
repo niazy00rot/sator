@@ -11,6 +11,7 @@ The platform consists of four main applications, each designed for a specific ty
 | Application | Technologies |
 |---|---|
 | Customer App | Flutter, Dart |
+| Customer Dashboard | Next.js, TypeScript, Tailwind CSS |
 | Delivery App | Flutter, Dart |
 | Restaurant Dashboard | Next.js, TypeScript, Tailwind CSS |
 | Admin Dashboard | Next.js, TypeScript, Tailwind CSS |
@@ -29,6 +30,8 @@ Sator/
 │
 ├── frontend/
 │   ├── customer/       # Customer Mobile Application
+│   |   ├── mobile/     # Customer Mobile Application
+│   |   └── web/        # Customer Dashboard
 │   ├── delivery/       # Delivery Mobile Application
 │   ├── restaurant/     # Restaurant Dashboard
 │   └── admin/          # Admin Dashboard
