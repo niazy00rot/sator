@@ -6,7 +6,6 @@ import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
 import ThemeProvider from "@/components/providers/ThemeProvider";
-import Navbar from "@/components/layout/Navbar/Navbar";
 
 import "./globals.css";
 
@@ -57,7 +56,6 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider>
-            <Navbar />
             {children}
           </ThemeProvider>
         </NextIntlClientProvider>

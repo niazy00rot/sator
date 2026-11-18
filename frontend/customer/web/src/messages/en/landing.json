@@ -8,5 +8,103 @@
     "login": "Login",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
+  },
+  "auth": {
+    "login": {
+      "eyebrow": "SATOR — ALWAYS DELICIOUS",
+      "headline": "Your favorite restaurants are closer than you think",
+      "description": "Order your meal easily and follow every step of delivery.",
+      "welcome": "Welcome back",
+      "title": "Log in",
+      "email": "Email address",
+      "emailPlaceholder": "name@example.com",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "showPassword": "Show password",
+      "hidePassword": "Hide password",
+      "remember": "Remember me",
+      "forgot": "Forgot password?",
+      "submit": "Log in",
+      "signupPrompt": "Don't have an account?",
+      "signupLink": "Sign up"
+    },
+    "signup": {
+      "eyebrow": "JOIN SATOR",
+      "title": "Create an account",
+      "description": "Add your details and discover a wide range of great restaurants and dishes.",
+      "name": "Full name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email address",
+      "emailPlaceholder": "name@example.com",
+      "phone": "Phone number",
+      "phonePlaceholder": "+20xxxxxxxxxx",
+      "password": "Password",
+      "passwordPlaceholder": "At least 8 characters",
+      "showPassword": "Show password",
+      "hidePassword": "Hide password",
+      "agree": "I agree to the",
+      "terms": "Terms and Conditions",
+      "and": "and",
+      "privacy": "Privacy Policy",
+      "submit": "Create account",
+      "loginPrompt": "Already have an account?",
+      "loginLink": "Log in",
+      "visualEyebrow": "NEAR AND DELIVERED",
+      "visualTitle": "Whatever you crave is on the way",
+      "visualDescription": "Explore your favorite restaurants and order what you love quickly and easily."
+    }
+  },
+  "legal": {
+      "terms": {
+        "eyebrow": "CORE RULES",
+        "title": "Terms and Conditions",
+        "updated": "Last updated: November 2026",
+        "service": {
+          "title": "Use of the platform",
+          "text": "Sator may only be used to legally request or provide food delivery services. You must not engage in activity that harms users, restaurants, or the platform."
+        },
+        "orders": {
+          "title": "Orders and delivery",
+          "text": "Order details, delivery times, and availability depend on restaurant information at the time of confirmation. Orders may be changed or cancelled according to restaurant and delivery status policies."
+        },
+        "accounts": {
+          "title": "Accounts and information",
+          "text": "Users are responsible for keeping account details secure and for providing accurate information. Notify Sator immediately if you suspect unauthorized account use."
+        },
+        "payments": {
+          "title": "Payments and fees",
+          "text": "The product cost, delivery fee, and applicable taxes are displayed before order confirmation. Charges are processed using the selected payment method after the restaurant accepts the order."
+        },
+        "liability": {
+          "title": "Limitation of liability",
+          "text": "Sator works to keep information accurate and the service available, but cannot guarantee that the platform will be free from interruption or error at all times."
+        }
+      },
+      "privacy": {
+        "eyebrow": "YOUR DATA, PROTECTED",
+        "title": "Privacy Policy",
+        "updated": "Last updated: November 2026",
+        "collection": {
+          "title": "Information we collect",
+          "text": "We collect account information, order details, and delivery information required to provide the service and improve the user experience."
+        },
+        "usage": {
+          "title": "How we use information",
+          "text": "We use information to process orders, complete payment and delivery, communicate about your account or orders, and improve platform quality."
+        },
+        "sharing": {
+          "title": "Information sharing",
+          "text": "We share only the minimum required order information with restaurants, delivery drivers, and payment providers needed to deliver and improve the service."
+        },
+        "security": {
+          "title": "Data security",
+          "text": "We use administrative and technical safeguards to protect information from unauthorized access, use, disclosure, or misuse."
+        },
+        "rights": {
+          "title": "Your choices and rights",
+          "text": "Subject to applicable law, you may request access to, correction of, or deletion of your information, and manage notification preferences from your account."
+        }
+      }
+    }
   }
 }

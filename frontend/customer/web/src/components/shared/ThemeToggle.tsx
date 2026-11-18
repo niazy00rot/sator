@@ -23,7 +23,7 @@ export default function ThemeToggle() {
       type="button"
       onClick={() => setTheme(isDark ? "light" : "dark")}
       aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
-      className="grid size-10 place-items-center rounded-full border border-[var(--foreground)]/10 text-[var(--foreground)] transition-colors hover:bg-[var(--surface-color)] cursor-pointer"
+      className="grid size-10 place-items-center bg-[var(--background)] rounded-full border border-[var(--foreground)]/10 text-[var(--foreground)] transition-colors hover:bg-[var(--surface-color)] cursor-pointer"
     >
       {isDark ? (
         <MdLightMode />

@@ -18,7 +18,7 @@ export default function LanguageSwitcher() {
     <button
       type="button"
       onClick={switchLocale}
-      className="grid h-10 min-w-10 place-items-center rounded-full border border-[var(--foreground)]/10 px-2.5 text-[12px] font-black text-[var(--foreground)] transition-colors hover:bg-[var(--surface-color)] cursor-pointer"
+      className="grid h-10 min-w-10 bg-[var(--background)] place-items-center rounded-full border border-[var(--foreground)]/10 px-2.5 text-[12px] font-black text-[var(--foreground)] transition-colors hover:bg-[var(--surface-color)] cursor-pointer"
       aria-label="Change language"
     >
       {locale === "en" ? "Ar" : "En"}

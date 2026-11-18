@@ -37,3 +37,21 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+::selection {
+  background-color: color-mix(in srgb, var(--primary-color), transparent 50%);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
