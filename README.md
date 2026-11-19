@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./frontend/customer/web/public/logo.png" alt="Sator Logo" width="300">
+</p>
+
 # Sator
 
 **Sator** is a food delivery platform that connects customers, restaurants, and delivery drivers through an integrated system.
