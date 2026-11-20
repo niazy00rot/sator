@@ -7,37 +7,6 @@
     "locationPlaceholder": "أدخل عنوانك أو اسم منطقتك",
     "findFood": "اعثر على الطعام",
     "fastDelivery": "توصيل سريع",
-    "topRestaurants": "مطاعم مختارة بعناية",
-    "floatingDelivery": "توصيل في الطريق",
-    "floatingTime": "يصل خلال 18 دقيقة",
-    "floatingRating": "تقييم العملاء",
-    "categoriesEyebrow": "ماذا تريد أن تطلب؟",
-    "categoriesTitle": "تصفح التصنيفات",
-    "viewAll": "عرض الكل",
-    "categories": {
-      "pizza": "بيتزا",
-      "burgers": "برجر",
-      "chicken": "دجاج",
-      "desserts": "حلويات"
-    },
-    "restaurantsEyebrow": "اختياراتنا لك",
-    "restaurantsTitle": "مطاعم شهيرة بالقرب منك",
-    "restaurantTags": {
-      "featured": "مميز",
-      "fast": "توصيل سريع",
-      "top": "الأعلى تقييمًا"
-    },
-    "restaurantsNames": {
-      "bistro": "بيسترو ساطور",
-      "grill": "جريل هاوس",
-      "sushi": "سوشي ستيشن"
-    },
-    "restaurantTypes": {
-      "bistro": "إيطالي • معكرونة",
-      "grill": "برجر • مشويات",
-      "sushi": "سوشي • آسيوي"
-    },
-    "delivery": "توصيل مجاني",
-    "minutes": "دقيقة"
+    "topRestaurants": "مطاعم مختارة بعناية"
   }
 }

@@ -1,41 +1,18 @@
 "use client";
 
-import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import {
-  MdArrowForward,
-  MdDeliveryDining,
-  MdLocalDining,
   MdLocationOn,
   MdRestaurant,
   MdSearch,
   MdSchedule,
-  MdStar,
-  MdVerified,
 } from "react-icons/md";
 
 import { Link } from "@/i18n/navigation";
 
 export default function Home() {
   const t = useTranslations("landing.home");
-
-  useEffect(() => {
-    document.title = "Sator";
-  }, []);
-
-  const categories = [
-    { key: "pizza", icon: "🍕", color: "bg-[#FFF1E8]" },
-    { key: "burgers", icon: "🍔", color: "bg-[#FCE9D8]" },
-    { key: "chicken", icon: "🍗", color: "bg-[#FFF2C9]" },
-    { key: "desserts", icon: "🍰", color: "bg-[#F8E8E4]" },
-  ] as const;
-
-  const restaurants = [
-    { key: "bistro", mark: "B", tag: "featured", rating: "4.9", time: "20-30", icon: "🍝" },
-    { key: "grill", mark: "G", tag: "fast", rating: "4.8", time: "25-35", icon: "🍔" },
-    { key: "sushi", mark: "S", tag: "top", rating: "4.7", time: "30-40", icon: "🍣" },
-  ] as const;
 
   return (
     <main className="overflow-hidden">
@@ -81,7 +58,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative mx-auto flex aspect-square w-full max-w-[610px] items-center justify-center">
+          <div className="relative mx-auto hidden aspect-square w-full max-w-[610px] items-center justify-center lg:flex">
             <div className="absolute inset-[8%] rounded-full bg-[var(--surface-color)]/55" />
             <Image
               src="/landing.png"
