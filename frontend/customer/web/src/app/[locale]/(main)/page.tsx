@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import {
   MdLocationOn,
@@ -12,6 +12,7 @@ import {
 import { Link } from "@/i18n/navigation";
 
 export default function Home() {
+  const locale = useLocale();
   const t = useTranslations("landing.home");
 
   return (
@@ -66,7 +67,9 @@ export default function Home() {
               width={1100}
               height={1100}
               priority
-              className="relative z-10 h-full w-full object-contain drop-shadow-[0_24px_28px_rgba(36,32,28,.12)]"
+              className={`relative z-10 h-full w-full object-contain drop-shadow-[0_24px_28px_rgba(36,32,28,.12)] ${
+                locale === "ar" ? "-scale-x-100" : ""
+              }`}
             />
           </div>
 
